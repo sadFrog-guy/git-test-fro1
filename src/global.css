@@ -1,0 +1,29 @@
+@media (max-width: 500px) {
+    .App {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .heading {
+        font-weight: 600;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 20px;
+        line-height: 30px;
+        color: #31375B;
+        margin-bottom: 15px;
+    }
+
+    .Card-box {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+        overflow-x: scroll;
+        height: 400px;
+        justify-content: center;
+        width: 90%;
+        margin-bottom: 40px;
+    }
+
+    
+}

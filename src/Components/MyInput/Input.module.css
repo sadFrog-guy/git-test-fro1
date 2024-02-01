@@ -1,0 +1,18 @@
+@media (max-width: 500px) {
+    .Input {
+        width: 75%;
+        height: 26px;
+        background-color: #f0f0f0; 
+        border-radius: 5px;
+        margin-bottom: 30px;
+        outline: none;
+        padding: 5px;
+        padding-left: 15px;
+        border: none;
+        border-radius: 5px;
+        font-weight: bold; 
+        background-color: #f0f0f0;
+        color: #31375B;
+         
+    }
+}

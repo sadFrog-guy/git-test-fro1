@@ -1,0 +1,13 @@
+@media (max-width: 500px) {
+    .button {
+        border-radius: 30px;
+        background: #31375B;
+        font-size: 16px;
+        cursor: pointer;
+        padding: 12px 60px 12px 60px;
+        border: none;
+        color: #fff;
+        margin-bottom: 30px;
+        transition: all
+    }
+}

@@ -1,0 +1,16 @@
+@media (max-width: 500px) {
+    .card {
+        width: 84px;
+        height: 76px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: firebrick;
+        font-size: 40px;
+        padding-top: 6px;
+        border: 4px solid firebrick;
+        border-radius: 8%;
+        cursor: pointer;
+        font-family: 'Josefin Sans', cursive;
+    }
+}
