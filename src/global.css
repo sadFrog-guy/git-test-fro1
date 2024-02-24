@@ -6,12 +6,13 @@
     }
 
     .heading {
-        font-weight: 600;
+        font-weight: bold;
         font-family: 'Josefin Sans', sans-serif;
         font-size: 20px;
         line-height: 30px;
         color: #31375B;
         margin-bottom: 15px;
+        
     }
 
     .Card-box {
@@ -25,5 +26,69 @@
         margin-bottom: 40px;
     }
 
-    
+    .heading-route {
+        font-weight: 700;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 30px;
+        color: #31375B;
+        margin-bottom: 15px;
+        margin-top: 10px;
+    }
+
+    .heading-info {
+        font-weight: 700;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 20px;
+        color: #31375B;
+        margin-top: 20px;
+    }
+
+    .arrow {
+        color: #31375B;
+        font-weight: bold;
+        font-family: 'Josefin Sans', sans-serif;
+        width: 100px;
+        text-align: center;
+        margin: 0;
+        margin-right: 15px;
+        margin-left: 30px;
+    }
+
+    .streets {
+        /* display: grid;
+        grid-template-rows: 20px 20px;
+        align-items: center;
+        justify-content: center; */
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 310px;
+        justify-content: center;
+        gap: 5px;
+        margin-bottom: 20px;
+    }
+
+    .texts {
+        display: flex;
+        flex-direction: column;
+        margin-right: 60px;
+        gap: 5px;
+        margin-bottom: 10px;
+    }
+
+    .text {
+        color: #31375B;
+        font-weight: 700;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 20px;
+        margin-bottom: 0;
+    }
+
+    .text-2 {
+        color:#864AF9;
+        font-weight: 700;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 20px;
+        margin-top: 0;
+    }
 }
