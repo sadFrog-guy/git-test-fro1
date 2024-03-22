@@ -3,34 +3,54 @@ import ImageOfBus from '../Components/ImageOfBus/ImageOfBus'
 import ImageOfMap from '../Components/ImageOfMap/ImageOfMap'
 import Street from '../Components/Streets/Street'
 import Button from '../Components/MyButton/Button'
+import { Link } from 'react-router-dom'
+import { useParams } from 'react-router-dom';
+import "../global.css"
+import transition from './../transitions';
+import routes from '../Data/Data.json'
 
-export default function InfoPage() {
+function InfoPage() {
+  const { id } = useParams();
+  const route = routes.filter(item => item.number === id)[0]
+  
   return (
-    <>
+    <div className="App">
         <ImageOfBus/>
-        <p className='heading-info'>Маршрут <span style={{color: '#80BCBD'}}>107</span></p>
-        <ImageOfMap/>
+        <p className='heading-info'>Маршрут <span style={{color: '#80BCBD'}}>{route.number}</span></p>
+
+        <ImageOfMap image={route.route_image}/>
         <div className='streets'>
-          <Street>⦿ ул. Пушкина</Street>
-          <Street>⦿ ул. Пушкина</Street>
-          <p className="arrow">🡣</p>
-          <p className="arrow">🡣</p>
-          <Street>⦿ ул. Пушкина</Street>
-          <Street>⦿ ул. Пушкина</Street>
-          <p className="arrow">🡣</p>
-          <p className="arrow">🡣</p>
-          <Street>⦿ ул. Пушкина</Street>
-          <Street>⦿ ул. Пушкина</Street>
-          <p className="arrow">🡣</p>
-          <p className="arrow">🡣</p>
-          <Street>⦿ ул. Пушкина</Street>
-          <Street>⦿ ул. Пушкина</Street>
+          {route.street_list.map((item, index) => {
+            if(index === route.street_list.length - 1) {
+              return (
+                <>
+                  <Street>⦿ ул. {item}</Street>
+                </>
+              )
+            } else {
+              return (
+                <>
+                  <Street>⦿ ул. {item}</Street>
+                  <p className="arrow">🡣</p>
+                </>
+              )
+            }
+          })}
         </div>
         <div className='texts'>
-          <p className="text">Конечная остановка:</p>
-          <p className="text-2">ул. Варшава 105</p>
+          <p className="text">Стартовая и конечная остановки:</p>
+          <p className="text-2">
+            ул. {route.start}
+            <br/>
+            ул. {route.last}
+          </p>
         </div>
-        <Button>Назад</Button>
-    </>
+        
+        <Link to='/routes'>
+          <Button>Назад</Button>
+        </Link>
+    </div>
   )
 }
+
+export default transition(InfoPage);

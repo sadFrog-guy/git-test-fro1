@@ -1,8 +1,8 @@
 import React from 'react'
 import style from "./Input.module.css"
 
-export default function Input({...props}) {
+export default function Input({children, setNumber, number , ...props}) {
   return (
-    <input className={style.Input} placeholder='Поиск' {...props} />
+    <input placeholder="Введите номер маршрута или улицу..." onChange={e => setNumber(e.target.value)} value={number} className={style.Input} {...props}></input>
   )
 }

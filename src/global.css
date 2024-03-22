@@ -1,8 +1,45 @@
+body {
+    margin: 0;
+}
+
+.pc-plug {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #fff;
+
+    background: #31375B;
+}
+
 @media (max-width: 500px) {
+    .pc-plug {
+        display: none;
+    }
+
     .App {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    .App.Main {
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+
+        .heading-route {
+            margin-bottom: 30px;
+        }
     }
 
     .heading {
@@ -16,14 +53,18 @@
     }
 
     .Card-box {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 40px;
-        overflow-x: scroll;
-        height: 400px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        grid-template-rows: repeat(auto-fit, 100px);
+        align-items: center;
+        justify-items: center;
         justify-content: center;
-        width: 90%;
+        gap: 20px;
+        overflow-x: scroll;
+        height: 300px;
+        width: 80%;
         margin-bottom: 40px;
+        padding-top: 30px;
     }
 
     .heading-route {
@@ -47,11 +88,13 @@
         color: #31375B;
         font-weight: bold;
         font-family: 'Josefin Sans', sans-serif;
-        width: 100px;
         text-align: center;
         margin: 0;
         margin-right: 15px;
         margin-left: 30px;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
     }
 
     .streets {
@@ -60,10 +103,11 @@
         align-items: center;
         justify-content: center; */
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         flex-wrap: wrap;
         width: 310px;
         justify-content: center;
+        align-items: center;
         gap: 5px;
         margin-bottom: 20px;
     }
@@ -89,6 +133,42 @@
         font-weight: 700;
         font-family: 'Josefin Sans', sans-serif;
         font-size: 20px;
+        line-height: 1.5;
         margin-top: 0;
+    }
+
+    .slide-in {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: #31375B;
+        transform-origin: bottom;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .slide-out {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: #31375B;
+        transform-origin: top;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo-pinned {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        width: 120px;
     }
 }

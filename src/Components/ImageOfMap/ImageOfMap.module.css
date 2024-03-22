@@ -1,5 +1,7 @@
 @media (max-width: 500px) {
     .image {
         margin-bottom: 30px;
+        display: flex;
+        justify-content: center;
     }
 }

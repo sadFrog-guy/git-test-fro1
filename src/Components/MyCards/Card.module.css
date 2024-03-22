@@ -5,12 +5,24 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-direction: column;
         color: #80BCBD;
         font-size: 40px;
         padding-top: 6px;
+        padding-bottom: 3px;
         border: 4px solid #80BCBD;
         border-radius: 8%;
         cursor: pointer;
         font-family: 'Josefin Sans', cursive;
+    }
+
+    .card.clicked {
+        transform: scale(1.1);
+    }
+
+    .type {
+        font-size: 12px;
+        margin: 0;
+        font-family: 'Josefin Sans', sans-serif;
     }
 }

@@ -8,8 +8,11 @@
         border: none;
         color: #fff;
         margin-bottom: 30px;
-        transition: all;
-        font-family: 'Josefin Sans', sans-serif;
-        
+        transition: all
+    }
+
+    .button.disabled {
+        background: #dadada;
+        color: grey;
     }
 }

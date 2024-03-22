@@ -1,30 +1,43 @@
-import React from 'react'
+import React, {useState} from 'react'
 import ImageOfBus from "../Components/ImageOfBus/ImageOfBus"
 import Input from "../Components/MyInput/Input"
 import Card from "../Components/MyCards/Card"
 import Button from "../Components/MyButton/Button"
+import { Link } from 'react-router-dom'
+import "../global.css"
+import transition from '../transitions'
+import routes from '../Data/Data.json'
 
-export default function RoutesPage() {
+function RoutesPage() {
+  const [number , setNumber] = useState("");
+  const [current, setCurrent] = useState("");
+
   return (
-    <>
-        <ImageOfBus></ImageOfBus>
-        <p className="heading">Выберите маршрут</p>
-        <Input></Input>
-        <div className="Card-box">
-            <Card>101</Card>
-            <Card>102</Card>
-            <Card>103</Card>
-            <Card>104</Card>
-            <Card>105</Card>
-            <Card>107</Card>
-            <Card>108</Card>
-            <Card>109</Card>
-            <Card>110</Card>
-            <Card>112</Card>
-            <Card>300</Card>
-            <Card>330</Card>
-        </div>
-        <Button>Далее</Button>
-    </>
+    <div className="App">
+      <ImageOfBus></ImageOfBus>
+      <p className="heading">Выберите маршрут</p>
+      <Input setNumber={setNumber} number={number}>{number}</Input>
+      <div className="Card-box">
+        {routes.map(item => {
+          if(item.number.includes(number) || item.street_list.some(street => street.includes(number))) {
+            return <Card
+                      setCurrent={setCurrent}
+                      clicked={current === item.number ? true : false}
+                      current={current.number}
+                      type={item.type}
+                      key={item.number}
+                      color={item.color}
+                    >
+                      {item.number}
+                    </Card>
+          }
+        })}
+      </div>
+      <Link to={`/routes/${current}`}>
+        <Button disabled={current ? false : true}>Далее</Button>
+      </Link>
+    </div>
   )
 }
+
+export default transition(RoutesPage);
