@@ -115,7 +115,6 @@ body {
     .texts {
         display: flex;
         flex-direction: column;
-        margin-right: 60px;
         gap: 5px;
         margin-bottom: 10px;
     }
@@ -170,5 +169,17 @@ body {
         top: 20px;
         left: 20px;
         width: 120px;
+    }
+}
+
+@media (max-width: 400px) {
+    .logo-pinned {
+        width: 90px;
+        top: 10px;
+        left: 10px;
+    }
+
+    .text, .text-2 {
+        font-size: 16px;
     }
 }

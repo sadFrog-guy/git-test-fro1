@@ -8,6 +8,7 @@ import { useParams } from 'react-router-dom';
 import "../global.css"
 import transition from './../transitions';
 import routes from '../Data/Data.json'
+import arrowLogo from '../Assets/arrow.png'
 
 function InfoPage() {
   const { id } = useParams();
@@ -31,7 +32,7 @@ function InfoPage() {
               return (
                 <>
                   <Street>⦿ ул. {item}</Street>
-                  <p className="arrow">🡣</p>
+                  <img src={arrowLogo} alt="arrow icon" style={{alignSelf: 'flex-start', marginLeft: '15px'}}/>
                 </>
               )
             }
