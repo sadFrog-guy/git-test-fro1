@@ -8,7 +8,8 @@
         border: none;
         color: #fff;
         margin-bottom: 30px;
-        transition: all
+        transition: all .2s;
+        font-family: 'Josefina Sans', sans-serif;
     }
 
     .button.disabled {

@@ -13,7 +13,9 @@
         border: 4px solid #80BCBD;
         border-radius: 8%;
         cursor: pointer;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0)!important;
         font-family: 'Josefin Sans', cursive;
+        transition: all .2s;
     }
 
     .card.clicked {
