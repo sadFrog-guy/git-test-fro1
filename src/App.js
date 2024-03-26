@@ -3,6 +3,7 @@ import "./global.css"
 import RoutesPage from "./Pages/RoutesPage"
 import MainPage from "./Pages/MainPage"
 import InfoPage from "./Pages/InfoPage"
+import AboutPage from "./Pages/AboutPage"
 import {
   Route,
   Routes,
@@ -29,6 +30,7 @@ function App() {
           <Route index element={<MainPage/>}/>
           <Route path="/routes" element={<RoutesPage/>}/>
           <Route path="/routes/:id" element={<InfoPage/>}/>
+          <Route path="/about" element={<AboutPage/>}/>
         </Routes>
       </AnimatePresence>
     </>
