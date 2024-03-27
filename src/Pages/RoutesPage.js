@@ -15,7 +15,7 @@ function RoutesPage() {
   return (
     <div className="App">
       <ImageOfBus></ImageOfBus>
-      <p className="heading">Выберите маршрут</p>
+      <Link to="/about" className="heading">Выберите маршрут</Link>
       <Input setNumber={setNumber} number={number}>{number}</Input>
       <div className="Card-box">
         {routes.map(item => {

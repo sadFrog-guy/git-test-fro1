@@ -187,3 +187,90 @@ body {
         font-size: 16px;
     }
 }
+
+@media (max-width: 500px) {
+    .ab-container {
+        background-color: #31375B;
+        padding: 0 48px;
+    }
+
+    .header-h1, .header-2 {
+        font-size: 30px;
+        font-family: "Josefin Sans", sans-serif;
+        color: white;
+        text-align: center;
+    }
+
+    .sub-heading {
+        color: white;
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 22px;
+        font-weight: 600;
+        margin-top: 30px;
+    }
+
+    .number-phone {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        color: white;
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 22px;
+        gap: 20px;
+        font-weight: 600;
+    }
+
+    .location {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        color: white;
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 18px;
+        gap: 20px;
+        font-weight: 600;
+        margin-bottom: 40px;
+    }
+
+    .team {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .team-box {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+
+        img {
+            width: 64px;
+        }
+    }
+
+    .tb-text {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .user-name {
+        color: white;
+        font-size: 17px;
+        font-family: "Josefina Sans", sans-serif;
+        font-weight: 600;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 5px;
+    }
+
+    .user-info {
+        color: #CBCBCB;
+        font-size: 15px;
+        font-family: "Josefina Sans", sans-serif;
+        margin: 0;
+        padding: 0;
+        margin-top: 5px;
+    }
+}
