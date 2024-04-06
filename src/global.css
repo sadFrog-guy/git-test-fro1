@@ -310,7 +310,11 @@ body {
         z-index: 1;
     }
 
-    .plug > button {
+    .plug > a {
+        text-decoration: none;
+    }
+
+    .plug > a > button {
         position: absolute;
         top: 50%;
         left: 50%;

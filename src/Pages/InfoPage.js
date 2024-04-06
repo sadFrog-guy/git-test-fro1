@@ -22,7 +22,9 @@ function InfoPage() {
 
         <div class="plug">
           <img src={plug} />
-          <Button>Посмотреть маршрут</Button>
+          <a href="https://yandex.ru/maps/?um=constructor%3A3b9871e79084418664511168e064a210599ac9c6332703ce94a520eb25789d0e&source=constructorLink">
+            <Button>Посмотреть маршрут</Button>
+          </a>
         </div>
 
         <div className='streets'>
