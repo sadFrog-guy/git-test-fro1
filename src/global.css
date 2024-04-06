@@ -65,7 +65,7 @@ body {
         justify-content: center;
         gap: 20px;
         overflow-x: scroll;
-        height: 300px;
+        height: 400px;
         width: 80%;
         margin-bottom: 40px;
         padding-top: 30px;
@@ -148,6 +148,7 @@ body {
         height: 100vh;
         background: #31375B;
         transform-origin: bottom;
+        z-index: 5;
 
         display: flex;
         justify-content: center;
@@ -162,6 +163,7 @@ body {
         height: 100vh;
         background: #31375B;
         transform-origin: top;
+        z-index: 5;
 
         display: flex;
         justify-content: center;
@@ -172,7 +174,7 @@ body {
         position: absolute;
         top: 20px;
         left: 20px;
-        width: 120px;
+        width: 74px;
     }
 }
 
@@ -191,7 +193,7 @@ body {
 @media (max-width: 500px) {
     .ab-container {
         background-color: #31375B;
-        padding: 0 48px;
+        padding: 30px 48px;
     }
 
     .header-h1, .header-2 {
@@ -199,14 +201,18 @@ body {
         font-family: "Josefin Sans", sans-serif;
         color: white;
         text-align: center;
+        margin: 0;
+        margin-bottom: 20px;
     }
 
     .sub-heading {
         color: white;
         font-family: "Josefin Sans", sans-serif;
-        font-size: 22px;
+        font-size: 20px;
+        line-height: 1.4;
         font-weight: 600;
         margin-top: 30px;
+        text-align: center;
     }
 
     .number-phone {
@@ -216,7 +222,7 @@ body {
         color: white;
         font-family: "Josefin Sans", sans-serif;
         font-size: 22px;
-        gap: 20px;
+        gap: 10px;
         font-weight: 600;
     }
 
@@ -227,9 +233,22 @@ body {
         color: white;
         font-family: "Josefin Sans", sans-serif;
         font-size: 18px;
-        gap: 20px;
+        gap: 10px;
         font-weight: 600;
         margin-bottom: 40px;
+    }
+
+    .about-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 30px;
+    }
+
+    .about-button > a > button {
+        color: #31375B;
+        background-color: #fff;
+        margin-bottom: 0;
     }
 
     .team {
@@ -272,5 +291,32 @@ body {
         margin: 0;
         padding: 0;
         margin-top: 5px;
+    }
+
+    .plug {
+        width: 80%;
+        height: 250px;
+        overflow: hidden;
+        position: relative;
+        margin-bottom: 30px;
+        border-radius: 15px;
+    }
+
+    .plug > img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .plug > button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        width: 60%;
+        padding: 12px 20px;
     }
 }

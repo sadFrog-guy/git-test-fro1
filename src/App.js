@@ -8,8 +8,9 @@ import {
   Route,
   Routes,
   useLocation,
+  Link
 } from "react-router-dom";
-import { AnimatePresence } from "framer-motion"
+import { AnimatePresence } from "framer-motion";
 import DevLogo from './Components/DevLogo/DevLogo'
 
 function App() {
@@ -23,7 +24,9 @@ function App() {
         В разработке...
       </div>
 
-      <DevLogo className="logo-pinned"/>
+      {location.pathname !== '/about'
+        && <Link to="/about"><DevLogo className="logo-pinned"/></Link>
+      }
 
       <AnimatePresence mode="wait">
         <Routes location={location} key={location.pathname}>

@@ -10,7 +10,8 @@ import html from '../../src/Assets/html.png'
 import python from '../../src/Assets/python.png'
 import design from '../../src/Assets/design.png'
 import others from '../../src/Assets/others.png'
-
+import Button from '../Components/MyButton/Button';
+import { Link } from 'react-router-dom';
 
 function AboutPage() {
   return (
@@ -19,7 +20,9 @@ function AboutPage() {
         <h1 className='header-h1'>О нас</h1>
         <p className='sub-heading'>
           Современные IT-курсы по веб-разработке в г.
-          Джалал-Абад. Мы создаем будущее!
+          Джалал-Абад. 
+          <br/>
+          Мы создаем будущее!
         </p>
         <div className='number-phone'>
           <img src={phone}/>
@@ -115,6 +118,12 @@ function AboutPage() {
               <p className='user-info'>Картограф</p>
             </div>
           </div>
+        </div>
+        
+        <div className='about-button'>
+          <Link to='/routes'>
+            <Button>Назад</Button>
+          </Link>
         </div>
       </div>
     </div>

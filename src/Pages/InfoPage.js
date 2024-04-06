@@ -9,6 +9,7 @@ import "../global.css"
 import transition from './../transitions';
 import routes from '../Data/Data.json'
 import arrowLogo from '../Assets/arrow.png'
+import plug from '../Assets/plug.jpg';
 
 function InfoPage() {
   const { id } = useParams();
@@ -19,19 +20,23 @@ function InfoPage() {
         <ImageOfBus/>
         <p className='heading-info'>Маршрут <span style={{color: '#80BCBD'}}>{route.number}</span></p>
 
-        <ImageOfMap image={route.route_image}/>
+        <div class="plug">
+          <img src={plug} />
+          <Button>Посмотреть маршрут</Button>
+        </div>
+
         <div className='streets'>
           {route.street_list.map((item, index) => {
             if(index === route.street_list.length - 1) {
               return (
                 <>
-                  <Street>⦿ ул. {item}</Street>
+                  <Street>⦿ {item}</Street>
                 </>
               )
             } else {
               return (
                 <>
-                  <Street>⦿ ул. {item}</Street>
+                  <Street>⦿ {item}</Street>
                   <img src={arrowLogo} alt="arrow icon" style={{alignSelf: 'flex-start', marginLeft: '15px'}}/>
                 </>
               )
