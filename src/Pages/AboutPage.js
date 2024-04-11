@@ -19,10 +19,10 @@ function AboutPage() {
       <div className='ab-container'>
         <h1 className='header-h1'>О нас</h1>
         <p className='sub-heading'>
-          Современные IT-курсы по веб-разработке в г.
-          Джалал-Абад. 
+          Мы молодая команда, которая предлагает спектр IT-услуг: от обучения 
+          и game dev до готовых бизнес-инструментов и разработки сайтов. 
           <br/>
-          Мы создаем будущее!
+          Присоединяйтесь к нам и станьте частью нашего сообщества разработчиков!
         </p>
         <div className='number-phone'>
           <img src={phone}/>
@@ -34,6 +34,13 @@ function AboutPage() {
         </div>
         <h1 className='header-2'>Наша команда</h1>
         <div className='team'>
+          <div className='team-box'>
+            <img src={main}></img>
+            <div className='tb-text'>
+              <p className='user-name'>Бактыгуль Орозова</p>
+              <p className='user-info'>Project Manager</p>
+            </div>
+          </div>
           <div className='team-box'>
             <img src={main}></img>
             <div className='tb-text'>

@@ -208,11 +208,10 @@ body {
     .sub-heading {
         color: white;
         font-family: "Josefin Sans", sans-serif;
-        font-size: 20px;
+        font-size: 15px;
         line-height: 1.4;
         font-weight: 600;
         margin-top: 30px;
-        text-align: center;
     }
 
     .number-phone {

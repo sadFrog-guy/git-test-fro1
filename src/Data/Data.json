@@ -3,7 +3,7 @@
       "number": "3",
       "type": "автобус ",
       "color": "#AFEEEE",
-      "route_image": "https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2022/07/route-marked-on-a-map.jpg",
+      "route_image": "https://yandex.ru/maps/?um=constructor%3A3b9871e79084418664511168e064a210599ac9c6332703ce94a520eb25789d0e&source=constructorLink",
       "start": "Тош-Кутчу айылы",
       "street_list": ["Тош-Кутчу айылы", "Доскана айылы", "Ташбулак айылы", "Облустук оорукана", "ОКМ", "Базар"],
       "last": "Базар"
@@ -12,7 +12,7 @@
       "number": "4",
       "type": "автобус ",
       "color": "#b6b6b6",
-      "route_image": "https://i.imgur.com/HTXoY9F.jpeg",
+      "route_image": "https://www.google.com/maps/d/u/1/edit?mid=17wv0K4un0VIIPOAgN_uA14kEE3kLbMw&usp=sharing",
       "start": "Базар",
       "street_list": ["Базар", "№5 мектеп", "СМУ к.ш.", "Гор. газ", "Ынтымак айылы", "Мал базар", "Птицафабрика"],
       "last": "Птицафабрика "
@@ -21,7 +21,7 @@
       "number": "7",
       "type": "автобус ",
       "color": "#98FB98",
-      "route_image": "https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2022/07/route-marked-on-a-map.jpg",
+      "route_image": "https://yandex.ru/maps/?um=constructor%3A22ca103393caa53f0c377c406dcdc535aae9eee922ea27bfc564d68b02789ccc&source=constructorLink",
       "start": "Базар",
       "street_list": ["Базар", "ПТУ №75", "Обл. оорукана", "Обл. торот уйу", "Гор. газ", "ПМК", "Ынтымак", "Кыргызстан айылы", "Дадан Баев кочосу", "С. Жээнбеков айылы", "№10 мектеп"],
       "last": "№10 мектеп"
@@ -30,7 +30,7 @@
       "number": "8",
       "type": "автобус ",
       "color": "#FFDAB9",
-      "route_image": "https://i.imgur.com/9B2YZVl.jpeg",
+      "route_image": "https://yandex.ru/maps/?um=constructor%3Ac589204391e820344fdde9385a9995254587fc9e44cacbb4f7a0b44af5e7d1a6&source=constructorLink     ",
       "start": "Кок-Арт",
       "street_list": ["Кок-Арт", "Университет (АТФ)", "Байэл базар", "Автобекет", "Муниципалдык базар", "№14 мектеп", "СМУ к.ш.", "Обл. торот уйу", "Обл. оорукана", "ОКМ", "Базар", "Темир жол бекети", "Газ чарба", "Областтык сот"],
       "last": "Областтык сот"
@@ -39,7 +39,7 @@
       "number": "9",
       "type": "автобус ",
       "color": "#87CEEB",
-      "route_image": "https://i.imgur.com/fk8nnbW.jpeg",
+      "route_image": "https://yandex.ru/maps/?um=constructor%3A411ca22c0331d154b7c4b2d5b80e8413f2c8204907eab6e492c62bf2a97124af&source=constructorLink   ",
       "start": "Кок-Арт",
       "street_list": ["Кок-Арт", "Университет (АТФ)", "Байэл базар", "Автобекет", "Областтык сот",  "Берекет базар", "ЖАМУ", "Газ чарба", "Темир жол бекети", "Базар", "ОКМ", "Обл. оорукана", "Обл. торот уйу", "СМУ к.ш.", "№14 мектеп", "Муниципалдык базар"],
       "last": "Муниципалдык базар"
@@ -48,7 +48,7 @@
       "number": "10",
       "type": "автобус ",
       "color": "#C8A2C8",
-      "route_image": "https://i.imgur.com/JFL2oSL.jpeg",
+      "route_image": "https://yandex.ru/maps/?um=constructor%3A6f806fe209873d55a42543f30f09d9bec98e5106a1a4070d90806531f6574473&source=constructorLink    ",
       "start": "Мед. колледж",
       "street_list": ["Мед. колледж", "Жени-жок", "Университет (АТФ)", "Айти базар", "Автобекет", "Областтык сот", "Берекет базар", "ЖАМУ", "Газ чарба", "Областтык усулдук борбор", "ОКМ", "Базар"],
       "last": "Базар"
@@ -57,7 +57,7 @@
       "number": "12",
       "type": "автобус ",
       "color": "#f2f265",
-      "route_image": "https://i.imgur.com/3z3ejUw.jpeg",
+      "route_image": "https://yandex.ru/maps/?um=constructor%3Aa412783f34bbfbc72c100cee92ccaab98bd00789d7c0bb7b6cf3410b354b2f8c&source=constructorLink    ",
       "start": "Котур-каман айылы",
       "street_list": ["Котур-каман айылы", "№10 мектеп", "Кыргызстан айылы", "Гулистан айылы", "Гор. газ", "Обл. торот уйу", "Обл. оорукана", "Токтогул паркы", "Базар"],
       "last": "Базар"
@@ -66,7 +66,7 @@
       "number": "101",
       "type": "маршрутка",
       "color": "#B0E0E6",
-      "route_image": "https://i.imgur.com/MZMpiri.jpeg",
+      "route_image": "https://yandex.ru/maps/?um=constructor%3A8a7c822b870ce796024d98b29526ced5cb2132672441173967fd76ea4b9385d3&source=constructorLink ",
       "start": "Темир Жол бекети",
       "street_list": ["Темир жол бекети", "Базар", "Обл. оорукана", "Обл. торот уйу", "№14 мектеп", "Муниципалдык базар", "Автобекет", "Айгул универмагы"],
       "last": "Айгул универмагы"
