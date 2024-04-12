@@ -326,6 +326,6 @@ body {
 
 @media (max-width: 377px) {
     .Card-box {
-        grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(75px , 1fr));
     }
 }

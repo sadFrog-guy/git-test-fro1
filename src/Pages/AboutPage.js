@@ -37,7 +37,7 @@ function AboutPage() {
           <div className='team-box'>
             <img src={main}></img>
             <div className='tb-text'>
-              <p className='user-name'>Бактыгуль Орозова</p>
+              <p className='user-name'>Бактыгуль Орозбаева</p>
               <p className='user-info'>Project Manager</p>
             </div>
           </div>
@@ -94,7 +94,7 @@ function AboutPage() {
             <img src={design}></img>
             <div className='tb-text'>
               <p className='user-name'>Адилет Касымбаев</p>
-              <p className='user-info'>Wed-design</p>
+              <p className='user-info'>Web-design</p>
             </div>
           </div>
           <div className='team-box'>
