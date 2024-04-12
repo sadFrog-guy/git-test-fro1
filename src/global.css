@@ -322,4 +322,10 @@ body {
         width: 60%;
         padding: 12px 20px;
     }
+}  
+
+@media (max-width: 377px) {
+    .Card-box {
+        grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));
+    }
 }

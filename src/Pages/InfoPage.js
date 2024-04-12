@@ -48,9 +48,9 @@ function InfoPage() {
         <div className='texts'>
           <p className="text">Стартовая и конечная остановки:</p>
           <p className="text-2">
-            ул. {route.start}
+            {route.start}
             <br/>
-            ул. {route.last}
+            {route.last}
           </p>
         </div>
         
