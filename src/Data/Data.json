@@ -84,7 +84,7 @@
       "number": "103",
       "type": "маршрутка",
       "color": "#98FB98",
-      "route_image": "https://i.imgur.com/7TieILG.jpeg",
+      "route_image": "https://yandex.ru/maps/?um=constructor%3A97759152b653e96c64d59e6d2163cde9f37283e3e637e9fd1498caf4fba8891e&source=constructorLink",
       "start": "Тош-Кутчу айылы",
       "street_list": ["Тош-Кутчу айылы", "Доскана айылы", "Ташбулак айылы", "Облустук оорукана", "Соцфонд", "Базар", "Темир жол бекети", "Уй тиричилик шаймандарын ондоочу жай"],
       "last": " Уй тиричилик шаймандарын ондоочу жай"
@@ -93,7 +93,7 @@
       "number": "105",
       "type": "маршрутка",
       "color": "rgb(157 157 198)",
-      "route_image": "https://i.imgur.com/SHtcyGh.jpeg",
+      "route_image": "https://yandex.ru/maps/?um=constructor%3A3f5be182434e48a4a631cf5190e459b1fcf997e2b8b9ab778e535a0d8185da2d&source=constructorLink",
       "start": "Эски стадион",
       "street_list": ["Эски стадион", "Газ чарба ишканасы", "Темир жол бекети", "Базар", "Автобекет", "Байэл", "Аэропорт", "№14 - мектеп", "Чон тегирмен", "Обл. торот уйу", "Обл. оорукана", "Базар", "Газ чарба ишканасы"],
       "last": "Газ чарба ишканасы"
@@ -120,7 +120,7 @@
       "number": "110",
       "type": "маршрутка",
       "color": "#C8A2C8",
-      "route_image": "https://i.imgur.com/qDZNjne.jpeg",
+      "route_image": "https://yandex.ru/maps/?um=constructor%3A66a73688f3a04029e5d4846cbf716e82a2a054bb4baba5c80f8ea7fdaca303d7&source=constructorLink",
       "start": "Ч. Айтматов кочосу",
       "street_list": ["Ч. Айтматов кочосу", "Мед. колледж", "Спутник к/ш", "Манас сейил кочосу", "Айшоола", "Муниципалдык базар", "Автобекет", "Базар", "Мол-Мол мейманканасы", "Газ чарба ишканасы", "Шор-Булак", "Курорт", "Курорт (подхоз)"],
       "last": "Курорт (подхоз)"
@@ -138,7 +138,7 @@
       "number": "114",
       "type": "маршрутка",
       "color": "#FFB6C1",
-      "route_image": "https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2022/07/route-marked-on-a-map.jpg",
+      "route_image": "https://yandex.ru/maps/?um=constructor%3A49f69ca29ed71ff6e76077ec6273f179cc562a1cfc2653cdec9228d1a594168e&source=constructorLink",
       "start": "Балдар бакчасы",
       "street_list": ["Балдар бакчасы", "Обл. оорукана", "Горький кочосу", "Базар"],
       "last": "Базар"

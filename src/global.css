@@ -42,7 +42,12 @@ body {
         height: 100vh;
 
         .heading-route {
-            margin-bottom: 30px;
+            margin-bottom: 0px;
+        }
+
+        .subheading-route {
+            margin-top: 5px;
+            margin-bottom: 40px;
         }
     }
 
@@ -75,6 +80,15 @@ body {
         font-weight: 700;
         font-family: 'Josefin Sans', sans-serif;
         font-size: 30px;
+        color: #31375B;
+        margin-bottom: 15px;
+        margin-top: 10px;
+    }
+
+    .subheading-route {
+        font-weight: 600;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 12px;
         color: #31375B;
         margin-bottom: 15px;
         margin-top: 10px;
