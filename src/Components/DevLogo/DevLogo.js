@@ -1,6 +1,6 @@
 import React from 'react'
 import devBig from '../../Assets/dev-big.png'
-import devSmall from '../../Assets/dev-small.png'
+import devSmall from '../../Assets/about-logo.png'
 
 export default function DevLogo({isBig = false, ...props}) {
   if(isBig) {

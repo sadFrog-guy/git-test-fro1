@@ -17,7 +17,7 @@ function AboutPage() {
   return (
     <div class="about">
       <div className='ab-container'>
-        <h1 className='header-h1'>О нас</h1>
+        <h1 className='header-h1'>CODE IT</h1>
         <p className='sub-heading'>
           Мы молодая команда, которая предлагает спектр IT-услуг: от обучения 
           и game dev до готовых бизнес-инструментов и разработки сайтов. 

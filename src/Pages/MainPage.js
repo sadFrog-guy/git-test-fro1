@@ -4,12 +4,44 @@ import "../global.css"
 import Button from '../Components/MyButton/Button'
 import { Link } from 'react-router-dom';
 import transition from '../transitions';
-import step1 from '../Assets/step1.jpg';
-import step2 from '../Assets/step2.jpg';
-import step3 from '../Assets/step3.jpg';
+import getMobileOperatingSystem from '../Services/checkOS';
+import ManualAndroid from './../Components/ManualAndroid/ManualAndroid';
+import ManualIOS from '../Components/ManualIOS/ManualIOS';
+import whatsapp from '../Assets/whatsapp (1).png';
+import instagram from '../Assets/instagram.png';
+import telegram from '../Assets/telegram.png';
 
 function MainPage() {
   const [active, setActive] = useState(false)
+
+  const renderInstruction = () => {
+    const os = getMobileOperatingSystem()
+
+    console.log(os)
+    if (os === 'Android') {
+      return (
+        <>
+          <ManualAndroid active={active} setActive={setActive}/>
+          <Button onClick={() => {
+            setActive(true)
+          }}>
+            Установить
+          </Button>
+        </>
+      )
+    } else if (os === 'iOS') {
+      return (
+        <>
+          <ManualIOS active={active} setActive={setActive}/>
+          <Button onClick={() => {
+            setActive(true)
+          }}>
+            Установить
+          </Button>
+        </>
+      )
+    }
+  }
 
   return (
     <div className="App Main">
@@ -24,31 +56,20 @@ function MainPage() {
           </Button>
         </Link>
 
-        <Button onClick={() => {
-          setActive(true)
-          console.log(active)
-        }}>
-          Установить
-        </Button>
+        {renderInstruction()}
 
-        
-        <div className="modal" style={active ? {} : {display: 'none'}}>
-          <div className='modal-bg' onClick={() => setActive(false)}/>
-
-          <div className='modal-inner'>
-            <p className='modal-step'>
-              1. Нажмите на три точки в правом верхнем углу вашего браузера
-            </p>
-            <img src={step1} alt="first-step"/>
-            <p className='modal-step'>
-              2. В появившемся меню нажмите кнопку "Установить приложение"
-            </p>
-            <img src={step2} alt="second-step"/>
-            <p className='modal-step'>
-              3. В появившемся окне нажмите кнопку "Установить"
-            </p>
-            <img src={step3} alt="third-step"/>
-          </div>
+        <div className='socials'>
+          <a href='https://www.instagram.com/code.01.kg/'>
+            <img src={instagram} alt='social'/>
+          </a>
+          
+          <a href='https://wa.link/0siv3l'>
+            <img src={whatsapp} alt='social'/>
+          </a>
+          
+          <a href='https://t.me/codejalalabad'>
+            <img src={telegram} alt='social'/>
+          </a>
         </div>
     </div>
   )
