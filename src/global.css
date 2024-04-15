@@ -228,17 +228,36 @@ body {
         left: 20px;
         width: 54px;
     }
+
+    .socials {
+        display: flex;
+        gap: 20px;
+        position: absolute;
+        bottom: 70px;
+    }
+
+    .socials > a > img {
+        width: 48px;
+    }
 }
 
 @media (max-width: 400px) {
     .logo-pinned {
-        width: 90px;
+        width: 44px;
         top: 10px;
         left: 10px;
     }
 
     .text, .text-2 {
         font-size: 16px;
+    }
+
+    .socials {
+        bottom: 40px;
+    }
+
+    .socials > a > img {
+        width: 48px;
     }
 }
 
@@ -373,17 +392,6 @@ body {
         z-index: 2;
         width: 60%;
         padding: 12px 20px;
-    }
-
-    .socials {
-        display: flex;
-        gap: 20px;
-        position: absolute;
-        bottom: 70px;
-    }
-
-    .socials > a > img {
-        width: 48px;
     }
 }  
 
