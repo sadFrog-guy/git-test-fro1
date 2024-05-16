@@ -232,8 +232,7 @@ body {
     .socials {
         display: flex;
         gap: 20px;
-        position: absolute;
-        bottom: 70px;
+        margin-top: 20px;
     }
 
     .socials > a > img {
@@ -253,11 +252,11 @@ body {
     }
 
     .socials {
-        bottom: 40px;
+        margin-top: 10px;
     }
 
     .socials > a > img {
-        width: 48px;
+        width: 32px;
     }
 }
 
